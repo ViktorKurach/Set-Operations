@@ -1,0 +1,231 @@
+Showing nodes accounting for 44.26s, 97.04% of 45.61s total
+Dropped 74 nodes (cum <= 0.23s)
+----------------------------------------------------------+-------------
+      flat  flat%   sum%        cum   cum%   calls calls% + context 	 	 
+----------------------------------------------------------+-------------
+                                            10.46s   100% |   runtime.scang C:\Go\src\runtime\proc.go
+    10.46s 22.93% 22.93%     10.46s 22.93%                | runtime.procyield C:\Go\src\runtime\asm_amd64.s
+----------------------------------------------------------+-------------
+                                             5.84s 80.89% |   runtime.gcDrain C:\Go\src\runtime\mgcmark.go
+                                             1.38s 19.11% |   runtime.gcDrainN C:\Go\src\runtime\mgcmark.go
+     3.75s  8.22% 31.16%      7.22s 15.83%                | runtime.scanobject C:\Go\src\runtime\mgcmark.go
+                                             2.12s 29.36% |   runtime.heapBitsForObject C:\Go\src\runtime\mbitmap.go
+                                             0.76s 10.53% |   runtime.greyobject C:\Go\src\runtime\mgcmark.go
+                                             0.30s  4.16% |   runtime.greyobject C:\Go\src\runtime\mbitmap.go
+                                             0.19s  2.63% |   runtime.greyobject C:\Go\src\runtime\mheap.go
+----------------------------------------------------------+-------------
+                                             2.12s 58.56% |   runtime.scanobject C:\Go\src\runtime\mgcmark.go
+                                             1.50s 41.44% |   runtime.shade C:\Go\src\runtime\mgcmark.go
+     3.62s  7.94% 39.09%      3.62s  7.94%                | runtime.heapBitsForObject C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                            15.70s   100% |   runtime.markroot.func1 C:\Go\src\runtime\mgcmark.go
+     3.18s  6.97% 46.06%     15.70s 34.42%                | runtime.scang C:\Go\src\runtime\proc.go
+                                            10.46s 66.62% |   runtime.procyield C:\Go\src\runtime\asm_amd64.s
+                                             1.32s  8.41% |   runtime.osyield C:\Go\src\runtime\os_windows.go
+                                             0.74s  4.71% |   runtime.nanotime C:\Go\src\runtime\sys_windows_amd64.s
+----------------------------------------------------------+-------------
+                                            33.21s 92.82% |   runtime.mstart C:\Go\src\runtime\proc.go
+                                            15.70s 43.88% |   runtime.markroot C:\Go\src\runtime\mgcmark.go
+                                             2.55s  7.13% |   runtime._System C:\Go\src\runtime\proc.go
+                                             0.05s  0.14% |   runtime.(*mheap).alloc C:\Go\src\runtime\mheap.go
+     2.55s  5.59% 51.66%     35.78s 78.45%                | runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+                                            22.39s 62.58% |   runtime.gcBgMarkWorker.func2 C:\Go\src\runtime\mgc.go
+                                            15.70s 43.88% |   runtime.markroot.func1 C:\Go\src\runtime\mgcmark.go
+                                             7.59s 21.21% |   runtime.writebarrierptr_prewrite1.func1 C:\Go\src\runtime\mbarrier.go
+                                             1.61s  4.50% |   runtime.gcAssistAlloc.func1 C:\Go\src\runtime\mgcmark.go
+                                             1.45s  4.05% |   runtime.mallocgc.func1 C:\Go\src\runtime\malloc.go
+                                             0.13s  0.36% |   runtime.(*mheap).alloc C:\Go\src\runtime\mheap.go
+----------------------------------------------------------+-------------
+                                             2.06s 97.63% |   runtime.bulkBarrierPreWrite C:\Go\src\runtime\mbitmap.go
+     2.11s  4.63% 56.28%      2.11s  4.63%                | runtime.writebarrierptr_prewrite1 C:\Go\src\runtime\runtime1.go
+----------------------------------------------------------+-------------
+                                             6.38s   100% |   runtime.writebarrierptr_prewrite1.func1 C:\Go\src\runtime\mbarrier.go
+     2.05s  4.49% 60.78%      6.38s 13.99%                | runtime.gcmarkwb_m C:\Go\src\runtime\mbarrier.go
+                                             4.33s 67.87% |   runtime.shade C:\Go\src\runtime\mgcmark.go
+----------------------------------------------------------+-------------
+                                             4.33s   100% |   runtime.gcmarkwb_m C:\Go\src\runtime\mbarrier.go
+     1.97s  4.32% 65.10%      4.33s  9.49%                | runtime.shade C:\Go\src\runtime\mgcmark.go
+                                             1.50s 34.64% |   runtime.heapBitsForObject C:\Go\src\runtime\mbitmap.go
+                                             0.47s 10.85% |   runtime.greyobject C:\Go\src\runtime\mgcmark.go
+                                             0.16s  3.70% |   runtime.greyobject C:\Go\src\runtime\mheap.go
+                                             0.15s  3.46% |   runtime.greyobject C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                             4.62s 99.57% |   runtime.typedmemmove C:\Go\src\runtime\mbarrier.go
+     1.69s  3.71% 68.80%      4.64s 10.17%                | runtime.bulkBarrierPreWrite C:\Go\src\runtime\mbitmap.go
+                                             2.06s 44.40% |   runtime.writebarrierptr_prewrite1 C:\Go\src\runtime\runtime1.go
+                                             0.89s 19.18% |   runtime.writebarrierptr_prewrite1 C:\Go\src\runtime\mbarrier.go
+----------------------------------------------------------+-------------
+                                             1.46s 94.81% |   runtime.(*mheap).alloc C:\Go\src\runtime\mheap.go
+                                             0.07s  4.55% |   runtime.largeAlloc C:\Go\src\runtime\malloc.go
+     1.54s  3.38% 72.18%      1.54s  3.38%                | runtime.memclrNoHeapPointers C:\Go\src\runtime\memclr_amd64.s
+----------------------------------------------------------+-------------
+                                             0.76s 61.79% |   runtime.scanobject C:\Go\src\runtime\mgcmark.go
+                                             0.47s 38.21% |   runtime.shade C:\Go\src\runtime\mgcmark.go
+     1.23s  2.70% 74.87%      1.23s  2.70%                | runtime.greyobject C:\Go\src\runtime\mgcmark.go
+----------------------------------------------------------+-------------
+                                             1.32s   100% |   runtime.scang C:\Go\src\runtime\proc.go
+     1.14s  2.50% 77.37%      1.32s  2.89%                | runtime.osyield C:\Go\src\runtime\os_windows.go
+----------------------------------------------------------+-------------
+                                             0.81s 77.88% |   runtime.gcDrain C:\Go\src\runtime\mgcmark.go
+                                             0.23s 22.12% |   runtime.gcDrainN C:\Go\src\runtime\mgcmark.go
+     1.04s  2.28% 79.65%      1.04s  2.28%                | runtime.scanobject C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                                1s   100% |   runtime.mallocgc C:\Go\src\runtime\malloc.go
+        1s  2.19% 81.85%         1s  2.19%                | runtime.heapBitsSetType C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                             0.89s 96.74% |   runtime.bulkBarrierPreWrite C:\Go\src\runtime\mbitmap.go
+     0.90s  1.97% 83.82%      0.92s  2.02%                | runtime.writebarrierptr_prewrite1 C:\Go\src\runtime\mbarrier.go
+----------------------------------------------------------+-------------
+                                             0.74s   100% |   runtime.scang C:\Go\src\runtime\proc.go
+     0.74s  1.62% 85.44%      0.74s  1.62%                | runtime.nanotime C:\Go\src\runtime\sys_windows_amd64.s
+----------------------------------------------------------+-------------
+                                             7.59s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+     0.63s  1.38% 86.82%      7.59s 16.64%                | runtime.writebarrierptr_prewrite1.func1 C:\Go\src\runtime\mbarrier.go
+                                             6.38s 84.06% |   runtime.gcmarkwb_m C:\Go\src\runtime\mbarrier.go
+                                             0.58s  7.64% |   runtime.gcmarkwb_m C:\Go\src\runtime\mheap.go
+----------------------------------------------------------+-------------
+                                             0.58s   100% |   runtime.writebarrierptr_prewrite1.func1 C:\Go\src\runtime\mbarrier.go
+     0.58s  1.27% 88.09%      0.58s  1.27%                | runtime.gcmarkwb_m C:\Go\src\runtime\mheap.go
+----------------------------------------------------------+-------------
+                                             0.27s 35.06% |   labwork.EqualSets C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.19s 24.68% |   labwork.Intersection C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.16s 20.78% |   labwork.Difference C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.15s 19.48% |   labwork.Union C:\Documents\Go Projects\src\labwork\sets.go
+     0.55s  1.21% 89.30%      0.77s  1.69%                | labwork.isInSet C:\Documents\Go Projects\src\labwork\sets.go
+----------------------------------------------------------+-------------
+                                             0.47s   100% |   runtime.typedmemmove C:\Go\src\runtime\mbarrier.go
+     0.47s  1.03% 90.33%      0.47s  1.03%                | runtime.memmove C:\Go\src\runtime\memmove_amd64.s
+----------------------------------------------------------+-------------
+                                             0.30s 66.67% |   runtime.scanobject C:\Go\src\runtime\mgcmark.go
+                                             0.15s 33.33% |   runtime.shade C:\Go\src\runtime\mgcmark.go
+     0.45s  0.99% 91.32%      0.45s  0.99%                | runtime.greyobject C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                             5.15s 78.75% |   labwork.extendTestCases C:\Documents\Go Projects\src\labwork\sets_test.go
+                                             0.59s  9.02% |   labwork.Difference C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.45s  6.88% |   labwork.Union C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.35s  5.35% |   labwork.Intersection C:\Documents\Go Projects\src\labwork\sets.go
+     0.43s  0.94% 92.26%      6.54s 14.34%                | runtime.growslice C:\Go\src\runtime\slice.go
+                                             4.58s 70.03% |   runtime.typedmemmove C:\Go\src\runtime\mbarrier.go
+                                             1.45s 22.17% |   runtime.mallocgc C:\Go\src\runtime\malloc.go
+----------------------------------------------------------+-------------
+                                             0.19s 54.29% |   runtime.scanobject C:\Go\src\runtime\mgcmark.go
+                                             0.16s 45.71% |   runtime.shade C:\Go\src\runtime\mgcmark.go
+     0.35s  0.77% 93.03%      0.35s  0.77%                | runtime.greyobject C:\Go\src\runtime\mheap.go
+----------------------------------------------------------+-------------
+                                             0.33s   100% |   runtime.typedmemmove C:\Go\src\runtime\mbarrier.go
+     0.33s  0.72% 93.75%      0.33s  0.72%                | runtime.bulkBarrierPreWrite C:\Go\src\runtime\mheap.go
+----------------------------------------------------------+-------------
+                                             4.58s 80.35% |   runtime.growslice C:\Go\src\runtime\slice.go
+                                             1.09s 19.12% |   labwork.extendTestCases C:\Documents\Go Projects\src\labwork\sets_test.go
+     0.28s  0.61% 94.37%      5.70s 12.50%                | runtime.typedmemmove C:\Go\src\runtime\mbarrier.go
+                                             4.62s 81.05% |   runtime.bulkBarrierPreWrite C:\Go\src\runtime\mbitmap.go
+                                             0.47s  8.25% |   runtime.memmove C:\Go\src\runtime\memmove_amd64.s
+                                             0.33s  5.79% |   runtime.bulkBarrierPreWrite C:\Go\src\runtime\mheap.go
+----------------------------------------------------------+-------------
+                                             1.45s   100% |   runtime.growslice C:\Go\src\runtime\slice.go
+     0.25s  0.55% 94.91%      1.45s  3.18%                | runtime.mallocgc C:\Go\src\runtime\malloc.go
+                                                1s 68.97% |   runtime.heapBitsSetType C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                             0.15s 65.22% |   labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+                                             0.08s 34.78% |   labwork.extendTestCases C:\Documents\Go Projects\src\labwork\sets_test.go
+     0.23s   0.5% 95.42%      0.23s   0.5%                | runtime.duffcopy C:\Go\src\runtime\duff_amd64.s
+----------------------------------------------------------+-------------
+                                             0.41s   100% |   labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+     0.14s  0.31% 95.72%      0.41s   0.9%                | labwork.EqualSets C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.27s 65.85% |   labwork.isInSet C:\Documents\Go Projects\src\labwork\sets.go
+----------------------------------------------------------+-------------
+                                             9.31s   100% |   testing.tRunner C:\Go\src\testing\testing.go
+     0.14s  0.31% 96.03%      9.31s 20.41%                | labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+                                             6.38s 68.53% |   labwork.extendTestCases C:\Documents\Go Projects\src\labwork\sets_test.go
+                                             0.86s  9.24% |   labwork.Difference C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.69s  7.41% |   labwork.Union C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.68s  7.30% |   labwork.Intersection C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.41s  4.40% |   labwork.EqualSets C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.15s  1.61% |   runtime.duffcopy C:\Go\src\runtime\duff_amd64.s
+----------------------------------------------------------+-------------
+                                             0.68s   100% |   labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+     0.11s  0.24% 96.27%      0.68s  1.49%                | labwork.Intersection C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.35s 51.47% |   runtime.growslice C:\Go\src\runtime\slice.go
+                                             0.19s 27.94% |   labwork.isInSet C:\Documents\Go Projects\src\labwork\sets.go
+----------------------------------------------------------+-------------
+                                             0.86s   100% |   labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+     0.09s   0.2% 96.47%      0.86s  1.89%                | labwork.Difference C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.59s 68.60% |   runtime.growslice C:\Go\src\runtime\slice.go
+                                             0.16s 18.60% |   labwork.isInSet C:\Documents\Go Projects\src\labwork\sets.go
+----------------------------------------------------------+-------------
+                                             0.69s   100% |   labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+     0.09s   0.2% 96.67%      0.69s  1.51%                | labwork.Union C:\Documents\Go Projects\src\labwork\sets.go
+                                             0.45s 65.22% |   runtime.growslice C:\Go\src\runtime\slice.go
+                                             0.15s 21.74% |   labwork.isInSet C:\Documents\Go Projects\src\labwork\sets.go
+----------------------------------------------------------+-------------
+                                             0.27s   100% |   runtime/pprof.(*profileBuilder).addCPUData C:\Go\src\runtime\pprof\proto.go
+     0.09s   0.2% 96.86%      0.27s  0.59%                | runtime/pprof.(*profMap).lookup C:\Go\src\runtime\pprof\map.go
+----------------------------------------------------------+-------------
+                                             6.38s   100% |   labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+     0.06s  0.13% 97.00%      6.38s 13.99%                | labwork.extendTestCases C:\Documents\Go Projects\src\labwork\sets_test.go
+                                             5.15s 80.72% |   runtime.growslice C:\Go\src\runtime\slice.go
+                                             1.09s 17.08% |   runtime.typedmemmove C:\Go\src\runtime\mbarrier.go
+                                             0.08s  1.25% |   runtime.duffcopy C:\Go\src\runtime\duff_amd64.s
+----------------------------------------------------------+-------------
+                                            22.39s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+     0.01s 0.022% 97.02%     22.39s 49.09%                | runtime.gcBgMarkWorker.func2 C:\Go\src\runtime\mgc.go
+                                            22.38s   100% |   runtime.gcDrain C:\Go\src\runtime\mgcmark.go
+----------------------------------------------------------+-------------
+                                            22.38s   100% |   runtime.gcBgMarkWorker.func2 C:\Go\src\runtime\mgc.go
+     0.01s 0.022% 97.04%     22.38s 49.07%                | runtime.gcDrain C:\Go\src\runtime\mgcmark.go
+                                            15.70s 70.15% |   runtime.markroot C:\Go\src\runtime\mgcmark.go
+                                             5.84s 26.09% |   runtime.scanobject C:\Go\src\runtime\mgcmark.go
+                                             0.81s  3.62% |   runtime.scanobject C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                             1.38s 91.39% |   runtime.largeAlloc C:\Go\src\runtime\malloc.go
+                                             0.13s  8.61% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+         0     0% 97.04%      1.51s  3.31%                | runtime.(*mheap).alloc C:\Go\src\runtime\mheap.go
+                                             1.46s 96.69% |   runtime.memclrNoHeapPointers C:\Go\src\runtime\memclr_amd64.s
+                                             0.05s  3.31% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+----------------------------------------------------------+-------------
+         0     0% 97.04%      2.55s  5.59%                | runtime._System C:\Go\src\runtime\proc.go
+                                             2.55s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+----------------------------------------------------------+-------------
+                                             1.61s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+         0     0% 97.04%      1.61s  3.53%                | runtime.gcAssistAlloc.func1 C:\Go\src\runtime\mgcmark.go
+                                             1.61s   100% |   runtime.gcAssistAlloc1 C:\Go\src\runtime\mgcmark.go
+----------------------------------------------------------+-------------
+                                             1.61s   100% |   runtime.gcAssistAlloc.func1 C:\Go\src\runtime\mgcmark.go
+         0     0% 97.04%      1.61s  3.53%                | runtime.gcAssistAlloc1 C:\Go\src\runtime\mgcmark.go
+                                             1.61s   100% |   runtime.gcDrainN C:\Go\src\runtime\mgcmark.go
+----------------------------------------------------------+-------------
+                                             1.61s   100% |   runtime.gcAssistAlloc1 C:\Go\src\runtime\mgcmark.go
+         0     0% 97.04%      1.61s  3.53%                | runtime.gcDrainN C:\Go\src\runtime\mgcmark.go
+                                             1.38s 85.71% |   runtime.scanobject C:\Go\src\runtime\mgcmark.go
+                                             0.23s 14.29% |   runtime.scanobject C:\Go\src\runtime\mbitmap.go
+----------------------------------------------------------+-------------
+                                             1.45s   100% |   runtime.mallocgc.func1 C:\Go\src\runtime\malloc.go
+         0     0% 97.04%      1.45s  3.18%                | runtime.largeAlloc C:\Go\src\runtime\malloc.go
+                                             1.38s 95.17% |   runtime.(*mheap).alloc C:\Go\src\runtime\mheap.go
+                                             0.07s  4.83% |   runtime.memclrNoHeapPointers C:\Go\src\runtime\memclr_amd64.s
+----------------------------------------------------------+-------------
+                                             1.45s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+         0     0% 97.04%      1.45s  3.18%                | runtime.mallocgc.func1 C:\Go\src\runtime\malloc.go
+                                             1.45s   100% |   runtime.largeAlloc C:\Go\src\runtime\malloc.go
+----------------------------------------------------------+-------------
+                                            15.70s   100% |   runtime.gcDrain C:\Go\src\runtime\mgcmark.go
+         0     0% 97.04%     15.70s 34.42%                | runtime.markroot C:\Go\src\runtime\mgcmark.go
+                                            15.70s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+----------------------------------------------------------+-------------
+                                            15.70s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+         0     0% 97.04%     15.70s 34.42%                | runtime.markroot.func1 C:\Go\src\runtime\mgcmark.go
+                                            15.70s   100% |   runtime.scang C:\Go\src\runtime\proc.go
+----------------------------------------------------------+-------------
+         0     0% 97.04%     33.21s 72.81%                | runtime.mstart C:\Go\src\runtime\proc.go
+                                            33.21s   100% |   runtime.systemstack C:\Go\src\runtime\asm_amd64.s
+----------------------------------------------------------+-------------
+                                             0.27s   100% |   runtime/pprof.profileWriter C:\Go\src\runtime\pprof\pprof.go
+         0     0% 97.04%      0.27s  0.59%                | runtime/pprof.(*profileBuilder).addCPUData C:\Go\src\runtime\pprof\proto.go
+                                             0.27s   100% |   runtime/pprof.(*profMap).lookup C:\Go\src\runtime\pprof\map.go
+----------------------------------------------------------+-------------
+         0     0% 97.04%      0.34s  0.75%                | runtime/pprof.profileWriter C:\Go\src\runtime\pprof\pprof.go
+                                             0.27s 79.41% |   runtime/pprof.(*profileBuilder).addCPUData C:\Go\src\runtime\pprof\proto.go
+----------------------------------------------------------+-------------
+         0     0% 97.04%      9.31s 20.41%                | testing.tRunner C:\Go\src\testing\testing.go
+                                             9.31s   100% |   labwork.TestSetOperations C:\Documents\Go Projects\src\labwork\sets_test.go
+----------------------------------------------------------+-------------

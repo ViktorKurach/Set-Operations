@@ -107,14 +107,19 @@ func CreateSetOfStrings(elems []string) Set {
 	return createSet(elems)
 }
 
-// Returns true if both sets have same elements, or false otherwise
-func EqualSets(set1 Set, set2 Set) bool {
+// Returns true if set1 is subset of set2, or false otherwise
+func IsSubset(set1 Set, set2 Set) bool {
 	for _, el := range set1 {
 		if !isInSet(el, set2) {
 			return false
 		}
 	}
 	return true
+}
+
+// Returns true if both sets have same elements, or false otherwise
+func EqualSets(set1 Set, set2 Set) bool {
+	return IsSubset(set1, set2) && IsSubset(set2, set1)
 }
 
 // Intersection of sets: elements appearing both in set1 and set2

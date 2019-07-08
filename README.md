@@ -6,3 +6,5 @@ Instruments:
 
 Contents:
   - LW1: Set container
+  - LW2: Attempt to optimize by speed
+  - LW3: Attempt of parallelization
